@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+  }
+
+.welcome_text{
+
+    position: absolute;
+    color: rgb(255, 255, 255);
+    
+}
+.logo{
+    background-color: black;
+    height: 150px;
+}
+.form_btn{
+    
+}

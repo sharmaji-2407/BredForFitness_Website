@@ -5,7 +5,8 @@ import Home from "./Home";
 import Form from "./Form";
 import Form2 from "./Form2";
 import Contact from "./Contact";
-import NavBar from "./Navbar";
+import "./App.css";
+
 import {Switch , Route, Redirect} from "react-router-dom";
 
 const App =() =>{
@@ -14,7 +15,7 @@ const App =() =>{
     return(
         <>
         
-        <NavBar />
+        
         <Switch>
             <Route exact path="/" component={Home} />
             
