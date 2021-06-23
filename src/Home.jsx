@@ -3,6 +3,7 @@ import {Route} from 'react-router-dom'
 import "./Home.css"
 import Logo from "./banner2.png";
 import Form from './Form';
+import AboutUs from './AboutUs'
 
 const Home =() =>{
     return(
@@ -17,6 +18,7 @@ const Home =() =>{
             <Route render={({ history}) => (
             <button className="form_btn btn-success" onClick={()=>{history.push('/form')}} >Form</button>
             )} />
+            <AboutUs />
 
             
         </>

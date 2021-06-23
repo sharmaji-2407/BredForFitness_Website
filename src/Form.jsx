@@ -9,7 +9,7 @@ const Form =() =>{
         <>
             <h1>Form1</h1>
             <Route render={({ history}) => (
-            <button className="form_btn btn-success" onClick={} >Home</button>
+            <button className="form_btn btn-success" >Home</button>
             )} />
             
         </>
