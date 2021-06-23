@@ -15,10 +15,16 @@ const Home =() =>{
                     Workout Program Made Just For You
                 </p>
             </div>
+<<<<<<< HEAD
             <Route render={({ history}) => (
             <button className="form_btn btn-success" onClick={()=>{history.push('/form')}} >Form</button>
             )} />
             <AboutUs />
+=======
+            
+            <button className="form_btn btn-success" >Form</button>
+            
+>>>>>>> 5e0ba34... button component is added
 
             
         </>
