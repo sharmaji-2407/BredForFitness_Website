@@ -7,17 +7,17 @@ body {
     -moz-osx-font-smoothing: grayscale;
     
   }
+.Container{
+    padding: 100px;
 
+}
 .welcome_text{
 
-    position: absolute;
+    font-size: 3em;
     color: rgb(255, 255, 255);
     
 }
 .logo{
     background-color: black;
     height: 150px;
-}
-.form_btn{
-    
 }
