@@ -9,22 +9,23 @@ const Home =() =>{
     return(
         <>
             <img className="logo" src={Logo} alt="Bred For Fitness" />
-            
-            <div className="Container col-6 col-lg-4">
-                <p className="welcome_text">
-                    Workout Program Made Just For You
-                </p>
+            <div className="block_up">
+                <div className="bg_rect">
+                    <div className="Container col-6 col-lg-4">
+                
+                        <p className="welcome_text">
+                            Workout Program Made Just For You
+                        </p>
+                    
+                    </div>
+                    <div className="hd_txt"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+                    <div className="btn btn_form"><button className="but1 form_btn btn-success" onClick={Form}>Get Started</button></div>
+                    <div className="img"></div>
+                    <div className="img2"></div>
+                 </div>
             </div>
-<<<<<<< HEAD
-            <Route render={({ history}) => (
-            <button className="form_btn btn-success" onClick={()=>{history.push('/form')}} >Form</button>
-            )} />
-            <AboutUs />
-=======
             
-            <button className="form_btn btn-success" >Form</button>
-            
->>>>>>> 5e0ba34... button component is added
+
 
             
         </>
@@ -32,3 +33,6 @@ const Home =() =>{
 };
 
 export default Home;
+
+
+

@@ -4,26 +4,22 @@ import Form2 from "./Form2"
 import Button from "./Button"
 
 const Form =() =>{
-    const [Active, setActive] = useState("One");
+    // const [Active, setActive] = useState("One");
     return(
         
-        <>
+        <div>
             <h1>Form1</h1>
-<<<<<<< HEAD
-            <Route render={({ history}) => (
-            <button className="form_btn btn-success" >Home</button>
-            )} />
-=======
             
             <button className="form_btn btn-success" >Home</button>
             <div>
+                {/* {Active === "One" && ""}
+                {Active === "Two" && <Form2 />} */}
                 
-                {Active === "Two" && <Form2 />}
             </div>
-            <Button title="Continue"/>
->>>>>>> 5e0ba34... button component is added
+            {/* <Button title="Continue"/> */}
             
-        </>
+            
+        </div>
     );
 };
 

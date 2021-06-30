@@ -8,9 +8,10 @@ import Contact from "./Contact";
 import "./App.css";
 
 import {Switch , Route, Redirect} from "react-router-dom";
+import AboutUs from './AboutUs';
 
 const App =() =>{
-    const [active, setActive] = useState("First");
+   
     
     return(
         <>
@@ -18,7 +19,7 @@ const App =() =>{
         
         <Switch>
             <Route exact path="/" component={Home} />
-            
+            <Route exact path="/aboutus" component={AboutUs} />
             <Route exact path="/form" component={Form} />
             <Route exact path="/contact" component={Contact} />
             <Redirect to="/" />
