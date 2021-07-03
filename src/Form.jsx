@@ -82,7 +82,7 @@ const Form =() =>{
                     name="gender" id="gender" 
                     checked={userReg.gender=="female"}
                     />
-                   <p>{userReg.gender}</p>
+                   
                 </div>
                 <div>
                     <label htmlFor="age">Age</label>
