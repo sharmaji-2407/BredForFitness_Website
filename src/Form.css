@@ -1,0 +1,112 @@
+.form1{
+    
+    height: auto;
+    width: 100%;
+}
+
+.FormDiv{
+    position: relative;
+    left :500px;
+    margin: 50px;
+    
+}
+.inputtxt{
+    position: absolute;
+    
+    left:200px;
+    padding: 5px;
+    border: none;
+    background: rgba(43, 43, 43, 0.5);
+    border-radius: 10px;
+    
+    
+}
+
+.param{
+    
+    width: 90px;
+    display: inline;
+}
+.wt{
+    position: absolute;
+    display: inline;
+    margin-left: 150px;
+   
+}
+.genDiv{
+    display: inline-block;
+    margin: 0px 10px;
+    padding: 0 30px;
+    
+    left: 150px;
+}
+#headLine{
+    color: #008E53;
+    
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+}
+#subHead{
+    margin: 30px 0px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+
+    color: #DEE0E8;
+}
+#ques{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+
+    color: #DEE0E8;
+}
+#ans{
+    width:800px ;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+
+    color: #DEE0E8;
+}
+.fields{
+    margin: 30px 0px;
+    color: white;
+    font-weight: bold;
+}
+.info-head p{
+    color: white;
+    margin-bottom: 50px;
+}
+#info-head{
+    color: white;
+    font-weight: bold;
+}
+.btn{
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 30px;
+    
+    background-color: #008E53;
+    color: white;
+    left: 450px;
+    top: 200px;
+    transition: 1s;
+  }
+  .btn:hover{
+    color: #008E53;
+    background-color: white;
+  }
+  

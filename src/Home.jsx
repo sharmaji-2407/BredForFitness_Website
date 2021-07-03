@@ -1,20 +1,25 @@
 import React,{useState} from 'react'
 import {Route} from 'react-router-dom'
 import "./Home.css"
-import Logo from "./banner2.png";
+import Logo from "./banner_raw.png";
 import Form from './Form';
 import AboutUs from './AboutUs'
+import {Link} from 'react-scroll'
+import Contact from './Contact';
+
 
 const Home =() =>{
-    const [form, setform] = useState("hid");
+    const [nav, setnav] = useState("hid");
     return(
-
-        <>
+        
+        <div className="cont">
             <img className="logo" src={Logo} alt="Bred For Fitness" />
             <div className="nav">
                 <nav>
-                    <a href="/aboutus"> About Us </a>
-                    <button onClick> Contact Us </button>
+                    <Link to="form" spy={true} smooth={true} duration={200}><a href="#" onClick={()=> setnav("aboutus")}>About Us</a> </Link>
+                    <Link to="form" spy={true} smooth={true} duration={200}><a href="#" onClick={()=> setnav("contact")}>Contact</a> </Link>
+                    
+                    
                 </nav>
             </div>
             <div className="block_up">
@@ -27,21 +32,39 @@ const Home =() =>{
                     
                     </div>
                     <div className="hd_txt"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
-                    <div className="btn btn_form"><button className="but1 form_btn btn-success" onClick={()=> setform("show")}>Get Started</button></div>
+                    <Link to="form" spy={true} smooth={true} duration={100}><button className="but1 form_btn" onClick={()=> setnav("show")}>Get Started</button></Link>
                     
-                    <div className="Form1">
-                        {form === "show" && <Form />}
-                    </div>
+                   
                     
                     <div className="img"></div>
                     <div className="img2"></div>
                  </div>
             </div>
+
             
 
 
+            <section id="form">
+                <div className="Form1">
+                    {nav === "show" && <Form />}
+                    {nav === "contact" && <Contact />}
+                    {nav === "aboutus" && <AboutUs />}
+                </div>
+            </section>
             
-        </>
+            {/* {/* <section id="aboutus">
+                <div className="Form1">
+                    {nav === "aboutus" && <AboutUs />}
+                </div>
+            </section>  */}
+            <section id="contact">
+                <div className="Form1">
+                    {nav === "contact" && <Contact />}
+                </div>
+            </section>  
+            
+        </div>
+        
     );
 };
 

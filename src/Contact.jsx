@@ -1,10 +1,12 @@
 import React from 'react'
+import './Contact.css'
 
 const Contact =() =>{
     return(
-        <>
-            <h1>Contact</h1>
-        </>
+        <div className="card">
+            <h1>Bred For Fitness</h1>
+            <p>Contact Us Here :</p>
+        </div>
     );
 };
 

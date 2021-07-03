@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import Form2 from "./Form2"
+import './Form.css'
 
 
 const Form =() =>{
@@ -42,82 +43,109 @@ const Form =() =>{
     return(
         
         <div className="form1">
-            <h1>Form1</h1>
+            <div>
+            <h3 id="headLine">Lets get started with your workout program</h3>
+            <h4 id="subHead">Quick FAQ</h4>
+            <h5 id="ques">How can filling a form help me get a better shape?</h5>
+            <p id="ans">The answer to this question is really simple, filling this small form will help us understand your goal and create a program just for you. </p>
+            
+            </div>
+            
+            
+           
+           <div className="FormDiv">
+           <div className="info-head">
+                <h3 id="info-head">Lets Start With Your Basic Information</h3>
+                <p>Please fill the following details so we can contact you with a personalised plan.</p>
+            </div>
             <form action="" onSubmit={handelSubmit}>
-                <div>
+                
+                <div className="fields">
                     <label htmlFor="fname">Full Name</label>
-                    <input type="text" autoComplete="off" 
+                    <input className="inputtxt" type="text" autoComplete="off" 
                     value={userReg.fname}
                     onChange={handleInput}
                     name="fname" id="fname" />
                 </div>
-                <div>
+                <div className="fields">
                     <label htmlFor="pno">Phone Number</label>
-                    <input type="text" autoComplete="off" 
+                    <input type="text" autoComplete="off" className="inputtxt"
                     value={userReg.pno}
                     onChange={handleInput}
                     name="pno" id="pno" />
                 </div>
-                <div>
+                <div className="fields">
                     <label htmlFor="email">Email</label>
-                    <input type="text" autoComplete="off" 
+                    <input type="text" autoComplete="off" className="inputtxt"
                     value={userReg.email}
                     onChange={handleInput}
                     name="email" id="email" />
                 </div>
-                <div>
+                <div className="fields">
                     <label htmlFor="gender">Gender</label>
-                    <label>Male</label>
-                    <input type="radio" 
-                    value="male"
-                    onChange={handleInput}
-                    name="gender" id="gender" 
-                    checked={userReg.gender=="male"}
-                    />
-
-                    <label>Female</label>
+                    <div className="genDiv">
+                        
+                        <input type="radio" 
+                        value="male"
+                        onChange={handleInput}
+                        name="gender" id="gender" 
+                        checked={userReg.gender=="male"}
+                        style={{margin:'0px 20px'}}
+                        />
+                        <label>Male </label>
+                    </div>
+                    <div className="genDiv">
+                    
                     <input type="radio" 
                     value="female"
                     onChange={handleInput}
                     name="gender" id="gender" 
                     checked={userReg.gender=="female"}
+                    style={{margin:'0px 20px'}}
                     />
+                    <label>Female </label>
+                    </div>
                    
                 </div>
-                <div>
+                <div className="fields">
                     <label htmlFor="age">Age</label>
-                    <input type="text" autoComplete="off" 
+                    <input type="text" autoComplete="off" className="inputtxt"
                     value={userReg.age}
                     onChange={handleInput}
                     name="age" id="age" />
                 </div>
-                <div>
+                <div className="fields">
                     <label htmlFor="hw">Height & Weight</label>
-                    <input type="text" autoComplete="off" 
+
+                    <input type="text" autoComplete="off" placeholder="in cm" className="inputtxt param"
                     value={userReg.ht}
                     onChange={handleInput}
                     name="ht" id="ht" />
-                    <input type="text" autoComplete="off" 
+
+                    <input type="text" autoComplete="off" placeholder="in kg" className="inputtxt param wt"
                     value={userReg.wt}
                     onChange={handleInput}
                     name="wt" id="wt" />
+
                 </div>
-                <div>
+                <div className="fields">
                     <label htmlFor="prof">Profession</label>
-                    <input type="text" autoComplete="off" 
+                    <input type="text" autoComplete="off" className="inputtxt"
                     value={userReg.prof}
                     onChange={handleInput}
                     name="prof" id="prof" />
                 </div>
-                <div>
+                <div className="fields addr">
                     <label htmlFor="address">Address</label>
-                    <input type="text" autoComplete="off" 
+                    <input type="text" autoComplete="off" className="inputtxt"
                     value={userReg.address}
                     onChange={handleInput}
+                    style={{height:'100px'}}
                     name="address" id="address" />
                 </div>
-                <button type="submit" onSubmit onClick={()=> setActive("two")}>Continue</button>
+                <button className="btn" type="submit" onSubmit onClick={()=> setActive("two")}>Continue</button>
             </form>
+            </div>
             
             <div>
                 {
