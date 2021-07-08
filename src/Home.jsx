@@ -3,6 +3,7 @@ import {Route} from 'react-router-dom'
 import "./Home.css"
 import Logo from "./banner_raw.png";
 import Form from './Form';
+import Form2 from './Form2';
 import AboutUs from './AboutUs'
 import {Link} from 'react-scroll'
 import Contact from './Contact';
@@ -13,7 +14,8 @@ const Home =() =>{
     return(
         
         <div className="cont">
-            <img className="logo" src={Logo} alt="Bred For Fitness" />
+        <section id="main">
+        <Link to="main" spy={true} smooth={true} duration={200}> <img className="logo" src={Logo} alt="Bred For Fitness" /></Link>
             <div className="nav">
                 <nav>
                     <Link to="form" spy={true} smooth={true} duration={200}><a href="#" onClick={()=> setnav("aboutus")}>About Us</a> </Link>
@@ -33,18 +35,15 @@ const Home =() =>{
                     </div>
                     <div className="hd_txt"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
                     <Link to="form" spy={true} smooth={true} duration={100}><button className="but1 form_btn" onClick={()=> setnav("show")}>Get Started</button></Link>
-                    
-                   
-                    
                     <div className="img"></div>
                     <div className="img2"></div>
                  </div>
             </div>
-
+            </section>
             
 
 
-            <section id="form">
+            <section id="form" className="sec">
                 <div className="Form1">
                     {nav === "show" && <Form />}
                     {nav === "contact" && <Contact />}
@@ -57,9 +56,9 @@ const Home =() =>{
                     {nav === "aboutus" && <AboutUs />}
                 </div>
             </section>  */}
-            <section id="contact">
+            <section id="form2">
                 <div className="Form1">
-                    {nav === "contact" && <Contact />}
+                    {nav === "form2" && <Form2 />}
                 </div>
             </section>  
             
@@ -69,6 +68,9 @@ const Home =() =>{
 };
 
 export default Home;
+                    
+                   
+                    
 
 
 
